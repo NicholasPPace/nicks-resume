@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center h-auto">
       <div className="text-center text-base lg:text-xl m-2 mt-4 lg:w-200 px-4">
-        Welcome!
+        Hey there!
       </div>
       <div className="text-center text-base lg:text-xl m-2 lg:w-200 px-6">
         {`My name is Nick and I am an experienced systems engineer, budding data scientist, and a coder on the side. I've been in IT for around 12 years and have dabbled in programming and data science for around 5 years now. With my skillset, deep curiosity, and a drive to fiddle with new technologies, I'm looking to branch out to new
