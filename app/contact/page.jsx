@@ -11,6 +11,7 @@ export default function Contact() {
   const [validEmail, setValidEmail] = useState(true);
   const [validMessage, setValidMessage] = useState(true);
   const [validForm, setValidForm] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
 
   const contactMessage = {
     from_name: name,
@@ -29,6 +30,7 @@ export default function Contact() {
       email: validEmail,
       message: validMessage,
       form: validForm,
+      sendStatus: emailSent,
     };
 
     if (name === "") {
@@ -46,6 +48,10 @@ export default function Contact() {
       errorCheck.message = false;
     }
 
+    if (errorCheck.sendStatus) {
+      return
+    }
+
     if (!errorCheck.message || !errorCheck.email || !errorCheck.name) {
       setValidForm(false);
       return;
@@ -54,6 +60,8 @@ export default function Contact() {
     if (errorCheck.message && errorCheck.email && errorCheck.name) {
       setValidForm(true);
       errorCheck.form = true;
+      setEmailSent(true);
+      errorCheck.sendStatus = true;
 
       if (errorCheck.form) {
         emailjs
@@ -128,13 +136,12 @@ export default function Contact() {
       >
         Submit
       </button>
-      {validForm ? (
+      {validForm && emailSent ? (
         <div className="w-screen m-2 p-4 lg:w-200 text-base lg:text-xl text-center">
           {`Thanks for the message. I'll get back to you as soon as I can!`}
         </div>
-      ) : (
-        <div></div>
-      )}
+      ) : (<div></div>)}
+      
     </main>
   );
 }

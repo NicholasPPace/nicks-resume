@@ -14,6 +14,10 @@ import vscode from "../public/images/logos/vscode.png";
 import windowslogo from "../public/images/logos/windowslogo.png";
 import node from "../public/images/logos/node-js.png";
 import python from "../public/images/logos/pythonLogo.png";
+import winserver from "../public/images/logos/winserver.png";
+import databricks from "../public/images/logos/databricks.svg";
+import linux from "../public/images/logos/linux.svg";
+import palantir from "../public/images/logos/palantir.png";
 
 export default function Home() {
   return (
@@ -22,35 +26,72 @@ export default function Home() {
         Welcome!
       </div>
       <div className="text-center text-base lg:text-xl m-2 lg:w-200 px-6">
-        {`Hey there! My name is Nick and I am an aspiring web developer. I've been in
-        IT for close to 10 years and programming for about 3 now. With my skillset, deep curiosity, and naivety in my heart, I'm looking to branch out to new
+        {`My name is Nick and I am an experienced systems engineer, budding data scientist, and a coder on the side. I've been in IT for around 12 years and have dabbled in programming and data science for around 5 years now. With my skillset, deep curiosity, and a drive to fiddle with new technologies, I'm looking to branch out to new
         horizons.`}
       </div>
       <div className="text-center text-base lg:text-xl m-2 lg:w-200 px-6">
         {`The bulk of my experience with IT has been focused on supporting various
         different military commands and government agencies. I've always been
-        interested in creating things and problem solving which both IT administration and programming have allowed me to do. My learning track has
+        interested in creating things and problem solving which IT, programming, and data science have allowed me to do. My learning track has
         been a lot of researching languages and issues, a lot of self paced
         courses, and a lot of collaboration with my friends who are in the
-        industry to develop new skills and work my way towards doing this as a
-        full-time job.`}
+        industry to develop my skills. I have always been a curious individual and this career path has allowed me to be able to tinker and work on new and exciting problems pert near constantly.`}
       </div>
       <div className="text-center text-base lg:text-xl m-2 lg:w-200 px-6">
         {`I graduated from USF in 2016. I have a passion for playing TTRPGs (such as
         Dungeons & Dragons), video games, and reading. I've been known to enjoy
-        hiking, and doing, mostly, wildlife photography. I've got 2 dogs and am
-        recently married.`}
+        hiking, and doing nature and wildlife photography. I have two dogs and am married to a wonderful partner.`}
       </div>
       <div className="text-center text-base lg:text-xl m-2 lg:w-200 px-6">
         {`Below is a general list of systems, languages, and technology I've used.
         If you'd like to see a high level view of my work and check out some links,
         head on over to the Portfolio section and have a look. If you're looking to
-        reach out, head over to, you guessed it, the Contact page.`}
+        reach out, head over to the Contact page.`}
       </div>
 
       <div className="m-2 mb-4 w-screen lg:w-168 flex flex-col gap-y-1 lg:gap-y-5 px-2">
         {/* Row One */}
         <div className="flex w-full gap-x-1 lg:gap-x-5 justify-center">
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={winserver}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="WinServerOS"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              WinServer
+            </div>
+          </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={windowslogo}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="WindowsOS"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              WinOS
+            </div>
+          </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={linux}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="Linux"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              Linux
+            </div>
+          </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={macos}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="MacOS"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              MacOS
+            </div>
+          </div>
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
               src={js}
@@ -61,26 +102,10 @@ export default function Home() {
               JavaScript
             </div>
           </div>
-          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
-            <Image
-              src={next}
-              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="Next.js"
-            />
-            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              Next.js
-            </div>
-          </div>
-          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
-            <Image
-              src={node}
-              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="Node.js"
-            />
-            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              Node.js
-            </div>
-          </div>
+        </div>
+
+        {/* Row Two */}
+        <div className="flex w-full lg:gap-x-5 justify-center">
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
               src={react}
@@ -91,10 +116,6 @@ export default function Home() {
               React
             </div>
           </div>
-        </div>
-
-        {/* Row Two */}
-        <div className="flex w-full lg:gap-x-5 justify-center">
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
               src={redux}
@@ -117,14 +138,28 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
-              src={html}
+              src={node}
               className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="HTML"
+              alt="Node.js"
             />
             <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              HTML
+              Node.js
             </div>
           </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={next}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="Next.js"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              Next.js
+            </div>
+          </div>
+        </div>
+
+        {/* Row Three */}
+        <div className="flex w-full lg:gap-x-5 justify-center">
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
               src={css}
@@ -135,10 +170,6 @@ export default function Home() {
               CSS
             </div>
           </div>
-        </div>
-
-        {/* Row Three */}
-        <div className="flex w-full lg:gap-x-5 justify-center">
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
               src={styledComponentsLogo}
@@ -172,36 +203,26 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
-              src={github}
+              src={html}
               className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="GitHub"
+              alt="HTML"
             />
             <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              GitHub
+              HTML
             </div>
           </div>
         </div>
 
         {/* Row Four */}
         <div className="flex w-full lg:gap-x-5 justify-center">
-          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
             <Image
-              src={macos}
+              src={github}
               className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="MacOS"
+              alt="GitHub"
             />
             <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              MacOS
-            </div>
-          </div>
-          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
-            <Image
-              src={windowslogo}
-              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="WindowsOS"
-            />
-            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
-              WinOS
+              GitHub
             </div>
           </div>
           <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
@@ -218,10 +239,30 @@ export default function Home() {
             <Image
               src={python}
               className="m-2 h-8 lg:h-16 w-8 lg:w-16"
-              alt="StyledComponents"
+              alt="Python"
             />
             <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
               Python
+            </div>
+          </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={databricks}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="Databricks"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              Databricks
+            </div>
+          </div>
+          <div className="flex flex-col items-center m-1 lg:m-2 bg-blueGray rounded-lg w-24 lg:w-28 shadow-dark">
+            <Image
+              src={palantir}
+              className="m-2 h-8 lg:h-16 w-8 lg:w-16"
+              alt="MSS"
+            />
+            <div className="w-full p-2 text-xs lg:text-sm text-center bg-limeGreen rounded-lg">
+              MSS
             </div>
           </div>
         </div>
